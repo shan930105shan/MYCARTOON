@@ -63,7 +63,12 @@ html{
 }}
 /* 背景 */
 * 
-
+ {
+	box-sizing: border-box;
+}
+p,h1,h2,h3,h4,h4,h6,div,span {
+	font-family:PingFangSC-Regular,sans-serif,Microsoft JhengHei;	
+}
 p {
 	font-size: 16px;
 }
@@ -302,7 +307,7 @@ p {
 	max-width: 600px;
 	margin:0px 0px 500px 0px;
 	padding: 0 30px;
-	color:#ffffff;
+	color:transparent;
 }
 
 .form input {
