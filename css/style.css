@@ -62,17 +62,18 @@ html{
     40vmax 60vmax;
 }}
 /* 背景 */
-* 
- {
+
+* {
 	box-sizing: border-box;
 }
 p,h1,h2,h3,h4,h4,h6,div,span {
 	font-family:PingFangSC-Regular,sans-serif,Microsoft JhengHei;	
 }
+
 p {
 	font-size: 16px;
 }
-/* part3 */
+/* 選單 */
 .navbar-brand img {
 	height: 50px;
 }
@@ -85,16 +86,24 @@ p {
 }
 }
 
-/* part4 */
+/* 輪播 */
 .banner {
 	margin-top: 76px;
 }
 .banner .container-fluid {
 	padding:0!important;
 }
+/* 輪播底 */
 
+/* RECOMMEND、分類 */
+.about {
+	padding:100px 0;
+	background:linear-gradient(#ffffff,#F0E5DE); 
+}
 
-
+.about img {
+	/* box-shadow:2px 2px 4px gray; */
+}
 .title {
 	font-size:60px;
 	font-weight: bold;
@@ -119,6 +128,7 @@ p {
 .title_line {
 	margin-bottom: 50px;
 }
+/* RECOMMEND、分類底 */
 
 /* 翻轉 */
 .card1{
@@ -256,11 +266,11 @@ p {
 
 /* ranklist */
 .product {
-	background-color: transparent;
+	background-color: #F0E5DE;
 	padding-bottom:70px;
 }
 .product .card {
-	background-color: transparent;
+	background-color: #ffffff;
 	padding: 20px 10px;
 	margin-bottom: 10px;
 }
@@ -288,8 +298,9 @@ p {
     width:80px;
     cursor: pointer;
 }
+/* ranklist底 */
 
-/* part7 */
+/* CONTACT */
 .contact {
 	height:600px;
 	padding-top: 100px;
@@ -307,7 +318,7 @@ p {
 	max-width: 600px;
 	margin:0px 0px 500px 0px;
 	padding: 0 30px;
-	color:transparent;
+	color:#ffffff;
 }
 
 .form input {
@@ -360,8 +371,9 @@ input[type=submit]:hover {
     height:40px; 
     width:40px;
 }
+/* CONTACT底 */
 
-/* part8 */
+/* FOOTER */
 footer {
 	background-color: #c1adad;
 	padding:20px 0; 
@@ -370,3 +382,4 @@ footer {
 footer p {
 	line-height: 39px;
 }
+/* FOOTER底 */
