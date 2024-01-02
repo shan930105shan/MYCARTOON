@@ -62,12 +62,7 @@ html{
     40vmax 60vmax;
 }}
 /* 背景 */
-* {
-	box-sizing: border-box;
-}
-p,h1,h2,h3,h4,h4,h6,div,span {
-	font-family:PingFangSC-Regular,sans-serif,Microsoft JhengHei;	
-}
+* 
 
 p {
 	font-size: 16px;
@@ -93,15 +88,8 @@ p {
 	padding:0!important;
 }
 
-/* 介紹 */
-.about {
-	padding:100px 0;
-	background:linear-gradient(#ffffff,#F0E5DE); 
-}
 
-.about img {
-	/* box-shadow:2px 2px 4px gray; */
-}
+
 .title {
 	font-size:60px;
 	font-weight: bold;
@@ -267,7 +255,7 @@ p {
 	padding-bottom:70px;
 }
 .product .card {
-	background-color: #ffffff;
+	background-color: transparent;
 	padding: 20px 10px;
 	margin-bottom: 10px;
 }
