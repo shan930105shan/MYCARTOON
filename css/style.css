@@ -60,8 +60,7 @@ body{
     0vmax -20vmax,
     -40vmax -20vmax,
     40vmax 60vmax;
-}
-}
+}}
 /* 背景 */
 
 
@@ -101,6 +100,7 @@ p {
 
 /* RECOMMEND、分類 */
 .about {
+	background-color: transparent;
 	padding:100px 0;
 	background:linear-gradient(transparent,transparent); 
 }
@@ -270,7 +270,7 @@ p {
 
 /* ranklist */
 .product {
-	background-color: transparent;
+	background-color: transparent,;
 	padding-bottom:70px;
 }
 .product .card {
@@ -279,6 +279,7 @@ p {
 	margin-bottom: 10px;
 }
 .product img {
+	background-color: transparent;
 	width:100%;
 	margin-bottom:20px;
 }
