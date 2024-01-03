@@ -2,10 +2,10 @@ html{
 	width: 100%;
 }
 /* 背景 */
-.container{
+body{
     margin:30px 80px 0px 80px;
     width:90%;
-    background-color:#fffff0;
+    background-color:#ffffff;
   background-image:
     radial-gradient(closest-side, rgba(215, 231, 212, 1), rgba(215, 231, 212, 0)),
     radial-gradient(closest-side, rgba(227, 242, 255, 1), rgba(227, 242, 255, 0)),
@@ -60,8 +60,11 @@ html{
     0vmax -20vmax,
     -40vmax -20vmax,
     40vmax 60vmax;
-}}
+}
+}
 /* 背景 */
+
+
 
 * {
 	box-sizing: border-box;
@@ -89,6 +92,7 @@ p {
 /* 輪播 */
 .banner {
 	margin-top: 76px;
+  	background-color: transparent;
 }
 .banner .container-fluid {
 	padding:0!important;
@@ -266,7 +270,7 @@ p {
 
 /* ranklist */
 .product {
-	background-color: transparent,;
+	background-color: transparent;
 	padding-bottom:70px;
 }
 .product .card {
@@ -302,6 +306,7 @@ p {
 
 /* CONTACT */
 .contact {
+  	background-color: transparent;
 	height:600px;
 	padding-top: 100px;
 	background-repeat: no-repeat;
