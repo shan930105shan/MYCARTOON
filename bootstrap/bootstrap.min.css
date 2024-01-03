@@ -2331,6 +2331,44 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
 }
+/* SING IN*/
+.btn-singin {
+  color: #000;
+  background-color: #f4e4c7;
+  border-color: # 797163;
+}
+
+.btn- singin:hover {
+  color: #000;
+  background-color: # dbccb3;
+  border-color: # 797163;
+}
+
+.btn- singin:focus, .btn- singin.focus {
+  color: #000;
+  background-color: # dbccb3;
+  border-color: #797163;
+  box-shadow: 0 0 0 0.2rem rgba(219, 204, 179, 0.5);
+}
+
+.btn- singin.disabled, .btn- singin:disabled {
+  color: #000;
+  background-color: # dbccb3;
+  border-color: # 797163;
+}
+
+.btn- singin:not(:disabled):not(.disabled):active, .btn- singin:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle {
+  color: #000;
+  background-color: # dbccb3;
+  border-color: # 797163;
+}
+
+.btn- singin:not(:disabled):not(.disabled):active:focus, .btn- singin:not(:disabled):not(.disabled).active:focus,
+.show > .btn-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(219, 204, 179, 0.5);
+}
+/* SINGIN*/
 
 .btn-primary {
   color: #fff;
