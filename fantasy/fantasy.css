@@ -1,6 +1,68 @@
 html{
 	width: 100%;
 }
+/* 背景 */
+body{
+    margin:30px 80px 0px 80px;
+    width:90%;
+    background-color:#fffff0;
+  background-image:
+    radial-gradient(closest-side, rgba(215, 231, 212, 1), rgba(215, 231, 212, 0)),
+    radial-gradient(closest-side, rgba(227, 242, 255, 1), rgba(227, 242, 255, 0)),
+    radial-gradient(closest-side, rgba(255, 235, 255, 1), rgba(255, 235, 255, 0)),
+     radial-gradient(closest-side, rgba(198, 246, 247, 1), rgba(198, 246, 247, 0)),
+     radial-gradient(closest-side, rgba(253, 248, 234, 1), rgba(253, 248, 234, 0));
+  background-size:
+    130vmax 130vmax;
+    80vmax 80vmax;
+    90vmax 90vmax;
+    100vmax 110vmax;
+    80vmax 80vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax -30vmax,
+    10vmax 10vmax,
+    -30vmax -10vmax,
+    50vmax 50vmax;
+   background-repeat: no-repeat;
+ animation: 3s movement linear infinite;
+   
+    /* justify-content: center;  
+    align-items: center;   */
+
+
+@keyframes movement {
+  0%, 100%{
+     background-size:
+    130vmax 130vmax;
+    80vmax 80vmax;
+    90vmax 90vmax;
+    100vmax 110vmax;
+    80vmax 80vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax -30vmax,
+    10vmax 10vmax,
+    -30vmax -10vmax,
+    50vmax 50vmax;
+  }
+  
+  25%{
+    background-size:
+    100vmax 100vmax;
+    90vmax 90vmax;
+    100vmax 100vmax;
+    90vmax 90vmax;
+    60vmax 60vmax;
+  background-position:
+    -60vmax -90vmax,
+    50vmax -40vmax,
+    0vmax -20vmax,
+    -40vmax -20vmax,
+    40vmax 60vmax;
+}
+}
+/* 背景 */
 
 * {
 	box-sizing: border-box;
@@ -36,7 +98,7 @@ p {
 /* 介紹 */
 .about {
 	padding:100px 0;
-	background:linear-gradient(#ffffff,#F0E5DE); 
+	/*background:linear-gradient(#ffffff,#F0E5DE); */
 }
 
 .about img {
@@ -67,143 +129,10 @@ p {
 	margin-bottom: 50px;
 }
 
-/* 翻轉 */
-.card1{
-	width: 30%;
-	height: 500px;
-	position: relative;
-	perspective: 1000px;
-  }
-.cover, .back{
-	width: 50%;
-	height: 500px;
-	position: absolute;
-	backface-visibility: hidden;
-	transition: transform .25s ease-in-out;
-  }
-  .cover
-  {
-	/*background-color:blue;*/
-	transform: rotatey(0deg);
-  }
-  .card1:hover .cover{
-	transform: rotatey(180deg);
-  }
-  .back
-  {
-	/*background-color:red;*/
-	transform: rotatey(180deg);
-  }
-  .card1:hover .back{
-	transform: rotatey(0deg);
-  }
-/* 翻轉底 */
-
-/* 動畫 */
-.slider_container {
-    margin: 30px auto;
-    width: 400px;
-    height: 280px;
-    position: relative;
-    background-color: transparent;
-    box-shadow:  transparent 0 0 5px;
-}
-
-.slider_container div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.slider_container div {
-    -webkit-animation: round 9s linear infinite;
-            animation: round 9s linear infinite;
-}
-@-webkit-keyframes round {
-    4% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        /* 0 - 1秒 淡入*/
-    }
-    20% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        /* 1- 5秒靜止*/
-    }
-    24% {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        /* 5-6秒淡出*/
-    }
-}
-@keyframes round {
-    4% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        /* 0 - 1秒 淡入*/
-    }
-    20% {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        /* 1- 5秒靜止*/
-    }
-    24% {
-        opacity: 0;
-        filter: alpha(opacity=0);
-        /* 5-6秒淡出*/
-    }
-}
-
-.slider_container div:nth-child(3) {
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-}
-
-.slider_container div:nth-child(2) {
-    -webkit-animation-delay: 6s;
-            animation-delay: 6s;
-}
-
-.slider_container div:nth-child(1) {
-    -webkit-animation-delay: 9s;
-            animation-delay: 9s;
-}
-.slider_container span {    
-    color: transparent;
-    background: transparent;
-    position: absolute;
-    left: 0%;
-    top: 280px;
-    width: 400px;
-    height: 100px;
-    font-size: 30px;
-    text-align: center;
-    line-height: 100px;
-    -webkit-transform:scaleY(0);
-        -ms-transform:scaleY(0);
-            transform:scaleY(0);
-    -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-}
-
-.slider_container:hover span {
-    width: 100%;
-    -webkit-transform:scaleY(1);
-        -ms-transform:scaleY(1);
-            transform:scaleY(1);
-}
-
-.slider_container:hover div {
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-}
-/* 動畫底 */
-
 
 /* ranklist */
 .product {
-	background-color: #d9f5f7;
+	/*background-color: #d9f5f7;*/
 	padding-bottom:70px;
 }
 .product .card {
