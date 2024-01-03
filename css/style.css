@@ -5,7 +5,7 @@ html{
 body{
     margin:30px 80px 0px 80px;
     width:90%;
-    background-color:#ffffff;
+    background-color:#fffff0;
   background-image:
     radial-gradient(closest-side, rgba(215, 231, 212, 1), rgba(215, 231, 212, 0)),
     radial-gradient(closest-side, rgba(227, 242, 255, 1), rgba(227, 242, 255, 0)),
@@ -60,7 +60,9 @@ body{
     0vmax -20vmax,
     -40vmax -20vmax,
     40vmax 60vmax;
-}}
+}
+}
+
 /* 背景 */
 
 
