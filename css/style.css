@@ -2,8 +2,8 @@ html{
 	width: 100%;
 }
 /* 背景 */
-/*body{
-    margin:30px 80px 0px 80px;
+body{
+    /*margin:30px 80px 0px 80px;*/
     width:100%;
     background-color:#fffff0;
   background-image:
@@ -19,10 +19,10 @@ html{
     100vmax 110vmax;
     80vmax 80vmax;
   background-position:
-    -80vmax -80vmax,
-    60vmax -30vmax,
+    80vmax 80vmax,
+    60vmax 30vmax,
     10vmax 10vmax,
-    -30vmax -10vmax,
+    30vmax 40vmax,
     50vmax 50vmax;
    background-repeat: no-repeat;
  animation: 3s movement linear infinite;
@@ -30,20 +30,20 @@ html{
     /* justify-content: center;  
     align-items: center;   */
 
-/*
+
 @keyframes movement {
   0%, 100%{
      background-size:
     100vmax 100vmax;
     80vmax 80vmax;
     90vmax 90vmax;
-    100vmax 110vmax;
+    100vmax 100vmax;
     80vmax 80vmax;
   background-position:
-    -80vmax -80vmax,
-    60vmax -30vmax,
+    80vmax 80vmax,
+    60vmax 90vmax,
     10vmax 10vmax,
-    -30vmax -10vmax,
+    30vmax 80vmax,
     50vmax 50vmax;
   }
   
@@ -55,13 +55,13 @@ html{
     90vmax 90vmax;
     60vmax 60vmax;
   background-position:
-    -60vmax -90vmax,
-    50vmax -40vmax,
-    0vmax -20vmax,
-    -40vmax -20vmax,
+    10vmax 90vmax,
+    0vmax 40vmax,
+    0vmax 30vmax,
+    40vmax 80vmax,
     40vmax 60vmax;
 }
-}*/
+}
 /* 背景 */
 
 * {
