@@ -5,7 +5,7 @@
 
 body{
  /* 背景 */
-.container{
+
     margin:30px 80px 0px 80px;
     width:90%;
     background-color:#fffff0;
@@ -63,7 +63,7 @@ body{
     0vmax -20vmax,
     -40vmax -20vmax,
     40vmax 60vmax;
-}}
+}
 /* 背景 */
 }
 
