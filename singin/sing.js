@@ -1,3 +1,11 @@
+firebase.initializeApp({
+  apiKey: "apiKey",
+  authDomain: "XXXXX.firebaseapp.com",
+  databaseURL: "https://XXXXX.firebaseio.com/"
+});
+
+const database = firebase.database();
+
 function show_hide() {
     var login = document.getElementById("container1");
     var signup = document.getElementById("container2");
