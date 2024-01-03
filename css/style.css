@@ -270,7 +270,7 @@ p {
 
 /* ranklist */
 .product {
-	background-color: transparent;
+	background-color:#000000;
 	padding-bottom:70px;
 }
 .product .card {
