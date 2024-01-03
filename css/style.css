@@ -29,7 +29,7 @@ body{
    
     /* justify-content: center;  
     align-items: center;   */
-}
+
 
 @keyframes movement {
   0%, 100%{
@@ -60,9 +60,7 @@ body{
     0vmax -20vmax,
     -40vmax -20vmax,
     40vmax 60vmax;
-}
-}
-
+}}
 /* 背景 */
 
 
@@ -272,7 +270,7 @@ p {
 
 /* ranklist */
 .product {
-	background-color: transparent,;
+	background-color: transparent;
 	padding-bottom:70px;
 }
 .product .card {
@@ -309,7 +307,7 @@ p {
 
 /* CONTACT */
 .contact {
-  	background-color: transparent;
+  background-color: transparent;
 	height:600px;
 	padding-top: 100px;
 	background-repeat: no-repeat;
@@ -383,7 +381,7 @@ input[type=submit]:hover {
 
 /* FOOTER */
 footer {
-	background-color: #c1c1c1;
+	background-color: #a79e94;
 	padding:20px 0; 
 }
 
