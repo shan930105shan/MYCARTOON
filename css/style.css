@@ -4,7 +4,7 @@ html{
 /* 背景 */
 body{
     margin:30px 80px 0px 80px;
-    width:90%;
+    width:100%;
     background-color:#fffff0;
   background-image:
     radial-gradient(closest-side, rgba(215, 231, 212, 1), rgba(215, 231, 212, 0)),
@@ -13,7 +13,7 @@ body{
      radial-gradient(closest-side, rgba(198, 246, 247, 1), rgba(198, 246, 247, 0)),
      radial-gradient(closest-side, rgba(253, 248, 234, 1), rgba(253, 248, 234, 0));
   background-size:
-    130vmax 130vmax;
+    100vmax 100vmax;
     80vmax 80vmax;
     90vmax 90vmax;
     100vmax 110vmax;
@@ -34,7 +34,7 @@ body{
 @keyframes movement {
   0%, 100%{
      background-size:
-    130vmax 130vmax;
+    100vmax 100vmax;
     80vmax 80vmax;
     90vmax 90vmax;
     100vmax 110vmax;
