@@ -1,7 +1,6 @@
 html{
 	width: 100%;
 }
-
 /* 背景 */
 body{
     margin:30px 80px 0px 80px;
@@ -65,8 +64,6 @@ body{
 }
 /* 背景 */
 
-
-
 * {
 	box-sizing: border-box;
 }
@@ -102,10 +99,12 @@ p {
 /* RECOMMEND、分類 */
 .about {
 	padding:100px 0;
-	/*background:linear-gradient(#ffffff,#F0E5DE);*/ 
+	background:linear-gradient(#ffffff,#F0E5DE); 
 }
 
-
+.about img {
+	/* box-shadow:2px 2px 4px gray; */
+}
 .title {
 	font-size:60px;
 	font-weight: bold;
