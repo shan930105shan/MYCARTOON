@@ -99,7 +99,7 @@ p {
 /* RECOMMEND、分類 */
 .about {
 	padding:100px 0;
-	background:linear-gradient(#ffffff,#F0E5DE); 
+	/*background:linear-gradient(#ffffff,#F0E5DE);*/ 
 }
 
 .about img {
