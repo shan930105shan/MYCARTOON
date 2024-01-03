@@ -98,7 +98,7 @@ p {
 /* RECOMMEND、分類 */
 .about {
 	padding:100px 0;
-	background:linear-gradient(#ffffff,#F0E5DE); 
+	background:linear-gradient(transparent,transparent); 
 }
 
 .about img {
@@ -110,7 +110,7 @@ p {
 }
 
 .title_line {
-	border-color:#ffffff;
+	border-color:#000000;
 }
 
 .story {
@@ -266,11 +266,11 @@ p {
 
 /* ranklist */
 .product {
-	background-color: #F0E5DE;
+	background-color: transparent,;
 	padding-bottom:70px;
 }
 .product .card {
-	background-color: #ffffff;
+	background-color: transparent;
 	padding: 20px 10px;
 	margin-bottom: 10px;
 }
@@ -311,20 +311,20 @@ p {
 }
 
 .contact .title {
-	color:#ffffff;
+	color:#000000;
 }
 
 .contact .form {
 	max-width: 600px;
 	margin:0px 0px 500px 0px;
 	padding: 0 30px;
-	color:#ffffff;
+	color:#000000;
 }
 
 .form input {
 	height: 40px;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #000000;
 	border-radius: 5px;
 	border:0px;
 	padding: 12px;
@@ -336,7 +336,7 @@ p {
 .form textarea {
 	height: 200px;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #000000;
 	border-radius: 5px;
 	border:0px;
 	padding: 12px;
@@ -375,7 +375,7 @@ input[type=submit]:hover {
 
 /* FOOTER */
 footer {
-	background-color: #c1adad;
+	background-color: #c1c1c1;
 	padding:20px 0; 
 }
 
