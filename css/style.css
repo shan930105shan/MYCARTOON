@@ -6,7 +6,7 @@ body{
  /* 背景 */
 
   
-    width:90%;
+    width:100%;
     background-color:#fffff0;
   background-image:
     radial-gradient(closest-side, rgba(215, 231, 212, 1), rgba(215, 231, 212, 0)),
@@ -378,6 +378,7 @@ input[type=submit]:hover {
 
 /* FOOTER */
 footer {
+	width:100%;
 	background-color: #c1adad;
 	padding:20px 0; 
 }
