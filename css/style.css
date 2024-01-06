@@ -5,6 +5,7 @@ head{
   width: 100%;
 }
 
+
 body{
  /* 背景 */
     width:100%;
@@ -14,19 +15,22 @@ body{
     radial-gradient(closest-side, rgba(227, 242, 255, 1), rgba(227, 242, 255, 0)),
     radial-gradient(closest-side, rgba(255, 235, 255, 1), rgba(255, 235, 255, 0)),
      radial-gradient(closest-side, rgba(198, 246, 247, 1), rgba(198, 246, 247, 0)),
+    radial-gradient(closest-side, rgba(250, 226, 255, 1), rgba(250, 226, 255, 0)),
      radial-gradient(closest-side, rgba(253, 248, 234, 1), rgba(253, 248, 234, 0));
   background-size:
-    130vmax 130vmax;
-    80vmax 80vmax;
-    90vmax 90vmax;
-    100vmax 110vmax;
-    80vmax 80vmax;
+    230vmax 230vmax;
+    180vmax 180vmax;
+    190vmax 190vmax;
+    200vmax 210vmax;
+    250vmax 250vmax;
+    280vmax 250vmax;
   background-position:
-    -80vmax -80vmax,
-    60vmax -30vmax,
-    10vmax 10vmax,
-    -30vmax -10vmax,
-    50vmax 50vmax;
+    -180vmax -280vmax,
+    260vmax -130vmax,
+    210vmax 210vmax,
+    -230vmax -110vmax,
+    60vmax 90vmax;
+    250vmax 150vmax;
    background-repeat: no-repeat;
  animation: 3s movement linear infinite;
    
@@ -37,32 +41,36 @@ body{
 @keyframes movement {
   0%, 100%{
      background-size:
-    130vmax 130vmax;
-    80vmax 80vmax;
-    90vmax 90vmax;
-    100vmax 110vmax;
-    80vmax 80vmax;
+    230vmax 230vmax;
+    180vmax 180vmax;
+    190vmax 190vmax;
+    200vmax 210vmax;
+    280vmax 250vmax;
+    250vmax 250vmax;
   background-position:
-    -80vmax -80vmax,
-    60vmax -30vmax,
-    10vmax 10vmax,
-    -30vmax -10vmax,
-    50vmax 50vmax;
+   -180vmax -280vmax,
+    260vmax -130vmax,
+    210vmax 210vmax,
+    230vmax 110vmax,
+    -160vmax -20vmax;
+    250vmax 150vmax;
   }
   
   25%{
     background-size:
-    100vmax 100vmax;
-    90vmax 90vmax;
-    100vmax 100vmax;
-    90vmax 90vmax;
-    60vmax 60vmax;
+    130vmax 260vmax;
+    280vmax 180vmax;
+    190vmax 250vmax;
+    280vmax 210vmax;
+    180vmax 280vmax;
+    100vmax 160vmax;
   background-position:
     -60vmax -90vmax,
     50vmax -40vmax,
     0vmax -20vmax,
     -40vmax -20vmax,
-    40vmax 60vmax;
+    140vmax 200vmax;
+    60vmax 90vmax;
 }
 /* 背景 */
 }
