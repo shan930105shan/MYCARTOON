@@ -381,7 +381,9 @@ footer {
 	background-color: #c1adad;
 	padding:20px 0; 
 }
-
+container {
+    width: 100%;
+}
 footer p {
 	line-height: 39px;
 }
