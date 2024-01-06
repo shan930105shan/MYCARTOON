@@ -1,11 +1,12 @@
 html{
 	width: 100%;
 }
+head{
+  width: 100%;
+}
 
 body{
  /* 背景 */
-
-  
     width:100%;
     background-color:#fffff0;
   background-image:
