@@ -89,6 +89,42 @@ p {
 .navbar-brand img {
 	height: 50px;
 }
+.category-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.category-trigger {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.category-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.category-options span {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.category-options span:last-child {
+  border-bottom: none;
+}
+
+.category-menu:hover .category-options {
+  display: block;
+}
 
 @media (min-width: 768px) {
 /*nav選單*/
