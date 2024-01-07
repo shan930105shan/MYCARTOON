@@ -89,19 +89,7 @@ p {
 .navbar-brand img {
 	height: 50px;
 }
-.button{
-  color:#fff;
-  font-size:1em;
-}
-.button:hover .hover{
-  display:block;
-}
-.hover{
-  width:60px;
-  display:none;
-  color:#000000;
-  background-color:#d4d2e1;
-}
+
 @media (min-width: 768px) {
 /*nav選單*/
 	.navbar{
