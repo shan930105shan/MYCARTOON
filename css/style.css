@@ -116,7 +116,7 @@ p {
   border-bottom: none;
 }
 
-.CLASS:hover .category-options {
+.btn btn-primary:hover .category-options {
   display: block;
 }
 
