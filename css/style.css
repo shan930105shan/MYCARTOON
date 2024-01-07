@@ -99,7 +99,7 @@ p {
 .category-options {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 80%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
