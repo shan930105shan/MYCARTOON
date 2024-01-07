@@ -122,7 +122,7 @@ p {
   border-bottom: none;
 }
 
-.category-menu:hover .category-options {
+.CLASS:hover .category-options {
   display: block;
 }
 
