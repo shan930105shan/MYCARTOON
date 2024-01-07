@@ -89,24 +89,18 @@ p {
 .navbar-brand img {
 	height: 50px;
 }
-.category-menu {
+.CLASS {
   position: relative;
   display: inline-block;
 }
 
-.category-trigger {
-  cursor: pointer;
-  padding: 10px;
-  background-color: #3498db;
-  color: #fff;
-  border-radius: 5px;
-}
+
 
 .category-options {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 80%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
