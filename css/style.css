@@ -7,7 +7,9 @@ head{
 
 
 body{
-    background-image: url('image/background.jpg');
+    width:1280px;
+    height:1080px;
+    background-image: url('../image/background.jpg');
     background-size: cover; /* 調整圖片大小以填滿整個視窗 */
     background-position: center; /* 將圖片置中 */
     background-repeat: no-repeat; /* 不重複背景圖片 */
