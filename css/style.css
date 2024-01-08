@@ -105,7 +105,7 @@ p {
 .category-options {
   display: none;
   position: absolute;
-  top: 110%;
+  top:90%;
   left: 75%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
