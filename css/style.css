@@ -321,7 +321,7 @@ p {
     animation: rotate 1s linear infinite; /* 啟用旋轉動畫 */
     position: absolute;
     top: 50%; /* 距離父容器上邊界的距離為 50% */
-    left: 0%; /* 距離父容器左邊界的距離為 50% */
+    left: 50%; /* 距離父容器左邊界的距離為 50% */
     transform: translate(-50%, -50%); /* 將元素置中 */
 }
 
