@@ -276,6 +276,25 @@
                 </div>
             </div>
         </div>
+	    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var rotateAnimation = document.querySelector(".rotate-animation");
+
+                window.addEventListener("scroll", function () {
+                    // 計算頁面滾動的位置
+                    var scrollPosition = window.scrollY;
+
+                    // 判斷是否達到觸發條件，這裡假設滾動到 300px 位置後觸發
+                    if (scrollPosition >= 300) {
+                        // 移除動畫暫停的類別，啟動動畫
+                        rotateAnimation.classList.remove("paused");
+                    } else {
+                        // 添加動畫暫停的類別，暫停動畫
+                        rotateAnimation.classList.add("paused");
+                    }
+                });
+            });
+        </script>
     </div>
     <!-- CONTACT -->
     <div class="contact" id="section3">
