@@ -1,295 +1,360 @@
-html{
-	width: 100%;
-}
-body {
-    width: 100%;
-    height: 100%;
-    background-image: url('../image/background.jpg');
-    background-size: cover; /* 調整圖片大小以填滿整個視窗 */
-    background-position: center; /* 將圖片置中 */
-    background-repeat: no-repeat; /* 不重複背景圖片 */
-    /* 背景 */
-    width: 100%;
-}
-* {
-	box-sizing: border-box;
-}
-p,h1,h2,h3,h4,h4,h6,div,span {
-	font-family:PingFangSC-Regular,sans-serif,Microsoft JhengHei;	
-}
+<!DOCTYPE html>
+<html lang="zh-TW">
 
-.icon {
-	width:50px;
-    margin:0px 10px 0px 0px;
-	font-weight: bold;
-}
+<head>
+    <meta charset="UTF-8">
+    <!-- 手機版縮放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>page</title>
+    <!-- css連結 -->
+    <link href="page3.css" rel="stylesheet">
+    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bayon">
+</head>
 
-p {
-	font-size: 16px;
-}
-/* part3 */
-.navbar-brand img {
-	height: 300px;
+<body>
+    <!-- html -->
 
-}
+    <div class="banner" style="padding:0px 0px 30px 0px">
+        <a href="../index.html" style="color:black;font-family:Bayon; font-size:50px;padding:0px 0px 0px 30px">
+            <img src="../image/arrow.png" style="margin:0px 0px 10px 0px" alt="" width="60" height="70">
+            Back to MyCartoon
+        </a>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <video id="loopingVideo"class="video" loop muted autoplay>
+                <source src="../video/main.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <script>
+                const video = document.getElementById('loopingVideo');
 
-@media (max-width: 768px) {
-/*nav選單*/
-	.navbar{
-	padding-left:50px!important;
-	padding-right:50px!important; 
-}
-.video {
-        width: 100%;
-        max-width: 800px;
-        display: block;
-        margin: auto;
-    }
+                video.addEventListener('ended', function () {
+                    // 在影片結束時重新播放
+                    video.currentTime = 0;
+                    video.play();
+                });
+            </script>
+            <!-- 輪播內容
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="../image/cat.png" class="d-block w-100" alt="...">
+    </div>-->
+            <!-- <div class="carousel-item">
+    <img src="../image/chick.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item ">
+    <img src="../image/dog.png" class="d-block w-100" alt="...">
+    </div> -->
+        </div>
+        </div>
+    </div>
 
-    .Episode1 {
-        width: 600px;
-        height: 400px;
-        max-width: 800px;
-        display: block;
-        margin: auto;
-        border: 2px solid gray; /* 灰色框線 */
-        border-radius: 10px; /* 圓角 */
-        box-shadow: 5px 5px 10px #888888; /* 陰影 */
-    }
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" style="font-family:Bayon; font-size:55px ;padding:5px 30px 0px 30px" href="#">The Elf's Journey</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav nav-pills ml-auto">
 
-.title {
-    font-size:20px;
-    font-weight: bold;
-}
-.icon {
-    width:30px;
-    font-weight: bold;
-}
-}
+                      <li class="nav-item" id="aboutNavItem">
+                          <a class="nav-link" href="#section3">
+                              <img class="icon" src="../image/about.png">
+                          </a>
+                          <div class="tooltip">Your Tooltip Content</div>
+                      </li>
 
-@media (max-width:320px) {
-    .title {
-        font-size:10px;
-        font-weight: bold;
-    }
-    .icon {
-        width:20px;
-        font-weight: bold;
-    }
-}
-#aboutNavItem {
-    position: relative;
-    display: block !important;
-}
+                  </ul>
+              </div>
+        </nav>
 
-.tooltip {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    <div class="product" style="padding:20px 0px 20px 0px" id="section2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <video class="Episode1" id="hoverVideo" width="420" height="280" loop muted>
+                    <source src="../video/Episode1.mp4" type="video/mp4" loop muted>
+                    Your browser does not support the video tag.
+                </video>
+            </a>
 
-#aboutNavItem:hover .tooltip {
-    display: block;
-}
+            
+                    
+            <script>
+                const Episode1 = document.getElementById('hoverVideo');
 
-.banner {
-	margin-top: 20px;
-}
-.banner .container-fluid {
-	padding:0!important;
-}
+                Episode1.addEventListener('mouseover', function () {
+                    // 滑鼠停留時播放影片
+                    Episode1.play();
+                    Episode1.style.transform = 'scale(1.5)';
+                });
 
-/* 介紹 */
-.about {
-	padding:100px 0;
-	
-}
+                Episode1.addEventListener('mouseout', function () {
+                    // 滑鼠離開時暫停影片
+                    Episode1.pause();
+                    Episode1.currentTime = 0; // 將播放時間重設為0，以便下次播放時從開頭開始
+                    Episode1.style.transform = 'scale(1)';
+                });
 
-.about img {
-	/* box-shadow:2px 2px 4px gray; */
-}
-.title {
-	font-size:50px;
-	font-weight: bold;
-}
+                Episode1.addEventListener('ended', function () {
+                    // 影片結束時重新播放
+                    Episode1.currentTime = 0;
+                });
+            </script>
 
-.title_line {
-	border-color:#ffffff;
-}
+            <a class="navbar-brand" href="#">Episode 1</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                <ul class="nav nav-pills ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#section1">
+                            <img class="icon" src="../image/plus.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">
+                            <img class="icon" src="../image/star.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/share.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/arrow-down.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-.story {
-	padding: 50px 0;
-	font-size: 18px;
-}
+    <div class="product" style="padding:20px 0px 20px 0px" id="section2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <video class="Episode2" id="hoverVideo2" width="420" height="280" loop muted>
+                    <source src="../video/Episode2.mp4" type="video/mp4" loop muted>
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+            <script>
+                const Episode2 = document.getElementById('hoverVideo2');
 
-.story span {
-	font-style: italic;
-	font-size: 20px;
-	display: block;
-	margin-bottom: 10px;
-	font-weight: bold;
-}
-.title_line {
-	margin-bottom: 50px;
-}
+                Episode2.addEventListener('mouseover', function () {
+                    // 滑鼠停留時播放影片
+                    Episode2.play();
+                    Episode2.style.transform = 'scale(1.5)';
+                });
 
+                Episode2.addEventListener('mouseout', function () {
+                    // 滑鼠離開時暫停影片
+                    Episode2.pause();
+                    Episode2.currentTime = 0; // 將播放時間重設為0，以便下次播放時從開頭開始
+                    Episode2.style.transform = 'scale(1)';
+                });
 
-/* ranklist */
-.product {
-	
-	padding-bottom:70px;
-}
-.product .card {
-	background-color: #ffffff;
-	padding: 20px 0px;
-	margin-bottom: 10px;
-}
-.product img .icon{
-	width:50px;
-	margin-bottom:0px;
-}
-.product img .pic{
-	width:500px;
-	margin-bottom:0px;
-}
-.product img:hover {
-	opacity: 0.8;
-}
-.product_name {
-	padding: 10px;
-}
-.product a {
-	font-size: 50px;
-    font-family:Bayon; 
-    padding:5px 40px 0px 0px
-}
-.circle{ 
-    font-family: Noto Sans;
-    flex-direction:row;
-    border-radius:50px;
-    display: flex;
-    justify-content: center;  
-    align-items: center; 
-    border:2px solid gray;
-    border-radius:50px;
-    height:44px; 
-    width:80px;
-    cursor: pointer;
-}
+                Episode2.addEventListener('ended', function () {
+                    // 影片結束時重新播放
+                    Episode2.currentTime = 0;
+                });
+            </script>
 
-@media (max-width:768px) {
-    .product a {
-        font-size: 30px;
-    }
-    .product {
-        background-color: #F0E5DE;
-        padding-bottom:70px;
-    }
-    .product .card {
-        background-color: #ffffff;
-        padding: 20px 0px;
-        margin-bottom: 10px;
-    }
-    .product img .icon{
-        width:30px;
-        margin-bottom:0px;
-    }
-    
-    .product img:hover {
-        opacity: 0.8;
-    }
-    .product_name {
-        padding: 10px;
-    }
-    .navbar-brand img {
-        height: 100px;
-    }
-}
+            <a class="navbar-brand" href="#">Episode 2</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+                <ul class="nav nav-pills ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#section1">
+                            <img class="icon" src="../image/plus.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">
+                            <img class="icon" src="../image/star.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/share.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/arrow-down.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-/* part7 */
-.contact {
-	height:600px;
-	padding-top: 100px;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: top center;
-}
+    <div class="product" style="padding:20px 0px 20px 0px" id="section2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <video class="Episode3" id="hoverVideo3" width="420" height="280" loop muted>
+                    <source src="../video/Episode3.mp4" type="video/mp4" loop muted>
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+            <script>
+                const Episode3 = document.getElementById('hoverVideo3');
 
-.contact .title {
-	color:#ffffff;
-}
+                Episode3.addEventListener('mouseover', function () {
+                    // 滑鼠停留時播放影片
+                    Episode3.play();
+                    Episode3.style.transform = 'scale(1.5)';
+                });
 
-.contact .form {
-	max-width: 600px;
-	margin:0px 0px 500px 0px;
-	padding: 0 30px;
-	color:#ffffff;
-}
+                Episode3.addEventListener('mouseout', function () {
+                    // 滑鼠離開時暫停影片
+                    Episode3.pause();
+                    Episode3.currentTime = 0; // 將播放時間重設為0，以便下次播放時從開頭開始
+                    Episode3.style.transform = 'scale(1)';
+                });
 
-.form input {
-	height: 40px;
-	width: 100%;
-	background-color: #ffffff;
-	border-radius: 5px;
-	border:0px;
-	padding: 12px;
-	resize: vertical;
-	color: #000000;
-	margin:7.5px 0;
-}
+                Episode3.addEventListener('ended', function () {
+                    // 影片結束時重新播放
+                    Episode3.currentTime = 0;
+                });
+            </script>
+            
+            <a class="navbar-brand" href="#">Episode 3</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent4" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent4">
+                <ul class="nav nav-pills ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#section1">
+                            <img class="icon" src="../image/plus.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">
+                            <img class="icon" src="../image/star.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/share.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/arrow-down.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-.form textarea {
-	height: 200px;
-	width: 100%;
-	background-color: #ffffff;
-	border-radius: 5px;
-	border:0px;
-	padding: 12px;
-	resize: vertical;
-	color: #000000;
-	margin:7.5px 0;
-}
+    <div class="product" style="padding:20px 0px 20px 0px" id="section2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                
+            <video class="Episode4" id="hoverVideo4" width="420" height="280" loop muted>
+                <source src="../video/Episode4.mp4" type="video/mp4" loop muted>
+                Your browser does not support the video tag.
+            </video>
+            </a>
+            <script>
+                const Episode4 = document.getElementById('hoverVideo4');
 
-input[type=submit] {
-  background-color: #ABD0CE;
-  color: white;
-  cursor: pointer;
-  width: 100px!important;
-  height: 48px;
-}
+                Episode4.addEventListener('mouseover', function () {
+                    // 滑鼠停留時播放影片
+                    Episode4.play();
+                    Episode4.style.transform = 'scale(1.5)';
+                });
 
-input[type=submit]:hover {
-  background-color: #8ABCB8;
-}
+                Episode4.addEventListener('mouseout', function () {
+                    // 滑鼠離開時暫停影片
+                    Episode4.pause();
+                    Episode4.currentTime = 0; // 將播放時間重設為0，以便下次播放時從開頭開始
+                    Episode4.style.transform = 'scale(1)';
+                });
 
-.circle2{ 
-    margin:0px 30px 0px 0px;
-    font-family: Noto Sans;
-    /* flex-direction:row;
-    display: flex;
-    justify-content: center;  
-    align-items: center;  */
-    width:40px; 
-    height:40px;
-    border-radius:20px;
-    background-color:gray;
-    height:40px; 
-    width:40px;
-}
+                Episode4.addEventListener('ended', function () {
+                    // 影片結束時重新播放
+                    Episode4.currentTime = 0;
+                });
+            </script>
+            <a class="navbar-brand" href="#">Episode 4</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent5" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent5">
+                <ul class="nav nav-pills ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#section1">
+                            <img class="icon" src="../image/plus.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">
+                            <img class="icon" src="../image/star.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/share.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/arrow-down.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-/* part8 */
-footer {
-	background-color: #c1adad;
-	padding:20px 0; 
-}
+    <div class="product" style="padding:100px 0px 100px 0px"id="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="title" style="font-family:Bayon; font-size:60px">Classic suggestion</p>
+                    <hr class="title_line">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../image/chick.png">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../image/redpanda.png">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../image/dog.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-footer p {
-	line-height: 39px;
-}
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    @FHISKMKXIAKSJ-012365
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS連結 -->
+    <script src="../bootstrap/jQuery.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
