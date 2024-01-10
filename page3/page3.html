@@ -21,23 +21,36 @@
             Back to MyCartoon
         </a>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <!-- 輪播內容 -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../image/cat.png" class="d-block w-100" alt="...">
-                </div>
-                <!-- <div class="carousel-item">
-              <img src="../image/chick.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item ">
-              <img src="../image/dog.png" class="d-block w-100" alt="...">
-            </div> -->
-            </div>
+            <video id="loopingVideo"class="video" loop muted autoplay>
+                <source src="../video/main.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <script>
+                const video = document.getElementById('loopingVideo');
+
+                video.addEventListener('ended', function () {
+                    // 在影片結束時重新播放
+                    video.currentTime = 0;
+                    video.play();
+                });
+            </script>
+            <!-- 輪播內容
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="../image/cat.png" class="d-block w-100" alt="...">
+    </div>-->
+            <!-- <div class="carousel-item">
+    <img src="../image/chick.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item ">
+    <img src="../image/dog.png" class="d-block w-100" alt="...">
+    </div> -->
+        </div>
         </div>
     </div>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" style="font-family:Bayon; font-size:45px ;padding:5px 30px 0px 30px" href="#">NAME</a>
+            <a class="navbar-brand" style="font-family:Bayon; font-size:55px ;padding:5px 30px 0px 30px" href="#">The Elf's Journey</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -70,144 +83,247 @@
     <div class="product" style="padding:20px 0px 20px 0px" id="section2">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img class="pic" src="../image/dog.png" >
+                <video class="Episode1" id="hoverVideo" width="420" height="280" loop muted>
+                    <source src="../video/Episode1.mp4" type="video/mp4" loop muted>
+                    Your browser does not support the video tag.
+                </video>
             </a>
+
+            
+                    
+            <script>
+                const Episode1 = document.getElementById('hoverVideo');
+
+                Episode1.addEventListener('mouseover', function () {
+                    // 滑鼠停留時播放影片
+                    Episode1.play();
+                    Episode1.style.transform = 'scale(1.5)';
+                });
+
+                Episode1.addEventListener('mouseout', function () {
+                    // 滑鼠離開時暫停影片
+                    Episode1.pause();
+                    Episode1.currentTime = 0; // 將播放時間重設為0，以便下次播放時從開頭開始
+                    Episode1.style.transform = 'scale(1)';
+                });
+
+                Episode1.addEventListener('ended', function () {
+                    // 影片結束時重新播放
+                    Episode1.currentTime = 0;
+                });
+            </script>
+
             <a class="navbar-brand" href="#">Episode 1</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
                 <ul class="nav nav-pills ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link " href="#section1">
-                        <img class="icon" src="../image/plus.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section2">
-                        <img class="icon" src="../image/star.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section3">
-                        <img class="icon" src="../image/share.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section3">
-                        <img class="icon" src="../image/arrow-down.png">
-                    </a>
-                  </li>
-                  </ul>
-              </div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#section1">
+                            <img class="icon" src="../image/plus.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">
+                            <img class="icon" src="../image/star.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/share.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/arrow-down.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 
     <div class="product" style="padding:20px 0px 20px 0px" id="section2">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img class="pic" src="../image/dog.png" >
+                <video class="Episode2" id="hoverVideo2" width="420" height="280" loop muted>
+                    <source src="../video/Episode2.mp4" type="video/mp4" loop muted>
+                    Your browser does not support the video tag.
+                </video>
             </a>
+            <script>
+                const Episode2 = document.getElementById('hoverVideo2');
+
+                Episode2.addEventListener('mouseover', function () {
+                    // 滑鼠停留時播放影片
+                    Episode2.play();
+                    Episode2.style.transform = 'scale(1.5)';
+                });
+
+                Episode2.addEventListener('mouseout', function () {
+                    // 滑鼠離開時暫停影片
+                    Episode2.pause();
+                    Episode2.currentTime = 0; // 將播放時間重設為0，以便下次播放時從開頭開始
+                    Episode2.style.transform = 'scale(1)';
+                });
+
+                Episode2.addEventListener('ended', function () {
+                    // 影片結束時重新播放
+                    Episode2.currentTime = 0;
+                });
+            </script>
+
             <a class="navbar-brand" href="#">Episode 2</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent3">
                 <ul class="nav nav-pills ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link " href="#section1">
-                        <img class="icon" src="../image/plus.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section2">
-                        <img class="icon" src="../image/star.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section3">
-                        <img class="icon" src="../image/share.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section3">
-                        <img class="icon" src="../image/arrow-down.png">
-                    </a>
-                  </li>
-                  </ul>
-              </div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#section1">
+                            <img class="icon" src="../image/plus.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">
+                            <img class="icon" src="../image/star.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/share.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/arrow-down.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 
     <div class="product" style="padding:20px 0px 20px 0px" id="section2">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img class="pic" src="../image/dog.png" >
+                <video class="Episode3" id="hoverVideo3" width="420" height="280" loop muted>
+                    <source src="../video/Episode3.mp4" type="video/mp4" loop muted>
+                    Your browser does not support the video tag.
+                </video>
             </a>
+            <script>
+                const Episode3 = document.getElementById('hoverVideo3');
+
+                Episode3.addEventListener('mouseover', function () {
+                    // 滑鼠停留時播放影片
+                    Episode3.play();
+                    Episode3.style.transform = 'scale(1.5)';
+                });
+
+                Episode3.addEventListener('mouseout', function () {
+                    // 滑鼠離開時暫停影片
+                    Episode3.pause();
+                    Episode3.currentTime = 0; // 將播放時間重設為0，以便下次播放時從開頭開始
+                    Episode3.style.transform = 'scale(1)';
+                });
+
+                Episode3.addEventListener('ended', function () {
+                    // 影片結束時重新播放
+                    Episode3.currentTime = 0;
+                });
+            </script>
+            
             <a class="navbar-brand" href="#">Episode 3</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent4" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent4" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent4">
                 <ul class="nav nav-pills ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link " href="#section1">
-                        <img class="icon" src="../image/plus.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section2">
-                        <img class="icon" src="../image/star.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section3">
-                        <img class="icon" src="../image/share.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section3">
-                        <img class="icon" src="../image/arrow-down.png">
-                    </a>
-                  </li>
-                  </ul>
-              </div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#section1">
+                            <img class="icon" src="../image/plus.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">
+                            <img class="icon" src="../image/star.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/share.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/arrow-down.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 
     <div class="product" style="padding:20px 0px 20px 0px" id="section2">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img class="pic" src="../image/dog.png" >
+                
+            <video class="Episode4" id="hoverVideo4" width="420" height="280" loop muted>
+                <source src="../video/Episode4.mp4" type="video/mp4" loop muted>
+                Your browser does not support the video tag.
+            </video>
             </a>
+            <script>
+                const Episode4 = document.getElementById('hoverVideo4');
+
+                Episode4.addEventListener('mouseover', function () {
+                    // 滑鼠停留時播放影片
+                    Episode4.play();
+                    Episode4.style.transform = 'scale(1.5)';
+                });
+
+                Episode4.addEventListener('mouseout', function () {
+                    // 滑鼠離開時暫停影片
+                    Episode4.pause();
+                    Episode4.currentTime = 0; // 將播放時間重設為0，以便下次播放時從開頭開始
+                    Episode4.style.transform = 'scale(1)';
+                });
+
+                Episode4.addEventListener('ended', function () {
+                    // 影片結束時重新播放
+                    Episode4.currentTime = 0;
+                });
+            </script>
             <a class="navbar-brand" href="#">Episode 4</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent5" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent5">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent5" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent5">
                 <ul class="nav nav-pills ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link " href="#section1">
-                        <img class="icon" src="../image/plus.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section2">
-                        <img class="icon" src="../image/star.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section3">
-                        <img class="icon" src="../image/share.png">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section3">
-                        <img class="icon" src="../image/arrow-down.png">
-                    </a>
-                  </li>
-                  </ul>
-              </div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#section1">
+                            <img class="icon" src="../image/plus.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">
+                            <img class="icon" src="../image/star.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/share.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">
+                            <img class="icon" src="../image/arrow-down.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 
