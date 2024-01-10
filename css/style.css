@@ -6,15 +6,16 @@ head{
 }
 
 
-body{
+body {
+
     width:1280px;
     height:1080px;
     background-image: url('../image/background.jpg');
     background-size: cover; /* 調整圖片大小以填滿整個視窗 */
     background-position: center; /* 將圖片置中 */
     background-repeat: no-repeat; /* 不重複背景圖片 */
- /* 背景 */
-    width:100%;
+    /* 背景 */
+    width: 100%;
     /*background-color:#fffff0;
   background-image:
     radial-gradient(closest-side, rgba(215, 231, 212, 1), rgba(215, 231, 212, 0)),
@@ -77,9 +78,11 @@ body{
     -40vmax -20vmax,
     140vmax 200vmax;
     60vmax 90vmax;
-}
+}*/
 /* 背景 */
 }
+
+
 
 * {
 	box-sizing: border-box;
@@ -105,7 +108,7 @@ p {
 .category-options {
   display: none;
   position: absolute;
-  top:90%;
+  top: 90%;
   left: 75%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -311,35 +314,44 @@ p {
 }
 /* 動畫底 */
 
+
+/* ranklist */
+.product {
+	/*background-color: #F0E5DE;*/
+	padding-bottom:70px;
+}
+
 /* 旋轉動畫 */
 .rotate-animation {
+    background-image: url('../image/start.png');
     width: 40px;
     height: 40px;
-    border: 5px solid #fff; /* 設定圓形的邊框 */
-    border-top: 5px solid #3498db; /* 設定圓形的邊框頂部為特定顏色 */
-    border-radius: 50%; /* 使元素呈現圓形 */
+    /*border: 5px solid #c1adad; 設定圓形的邊框 */
     animation: rotate 1s linear infinite; /* 啟用旋轉動畫 */
     position: absolute;
-    top: 50%; /* 距離父容器上邊界的距離為 50% */
-    left: 50%; /* 距離父容器左邊界的距離為 50% */
+    top: 1300px; /* 距離父容器上邊界的距離為 50% */
+    left: 200px; /* 距離父容器左邊界的距離為 50% */
+    transform-origin: center center; /* 設定旋轉中心 */
+    /*animation-play-state: paused;*/
     transform: translate(-50%, -50%); /* 將元素置中 */
 }
+.rotate-animation.rotate {
+        transform: rotateY(45deg);
+        transition: transform 0.5s ease;
+}
+
 
 /* 旋轉動畫的關鍵幀 */
 @keyframes rotate {
-    from {
+    from{
         transform: rotateY(0deg);
     }
 
     to {
         transform: rotateY(360deg);
     }
-}
 
-/* ranklist */
-.product {
-	/*background-color: #F0E5DE;*/
-	padding-bottom:70px;
+   
 }
 .product .card {
 	background-color: #fffff0;
