@@ -119,9 +119,9 @@ h5:hover{
   border: 0px;
 }
 
-.submit:hover{
-  background: #db6937;
-}
+    .submit:hover {
+        background: #dbc2ab;
+    }
 
 #container2{
   visibility: hidden;   /*剛開始消失*/
