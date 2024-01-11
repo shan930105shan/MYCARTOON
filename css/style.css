@@ -184,13 +184,13 @@ p {
 /* 翻轉 */
 .card1{
 	width: 30%;
-	height: 500px;
+	height: 100%;
 	position: relative;
 	perspective: 1000px;
   }
 .cover, .back{
 	width: 50%;
-	height: 500px;
+	height: 100%;
 	position: absolute;
 	backface-visibility: hidden;
 	transition: transform .25s ease-in-out;
